@@ -1,103 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Desi SMP Registration</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      font-family: Arial;
+      background: #0f0f0f;
       color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      color: #00ffcc;
-    }
-
-    form {
-      background: rgba(255, 255, 255, 0.1);
+      text-align: center;
       padding: 30px;
-      border-radius: 20px;
-      max-width: 500px;
-      width: 100%;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
     }
-
-    label {
-      display: block;
-      text-align: left;
-      margin: 15px 0 5px;
-    }
-
-    input, select {
-      width: 100%;
+    input, select, textarea {
       padding: 10px;
-      border-radius: 10px;
+      width: 80%;
+      margin: 10px 0;
+      border-radius: 5px;
       border: none;
-      margin-bottom: 10px;
-      font-size: 1em;
     }
-
     button {
-      padding: 12px 20px;
+      padding: 10px 20px;
+      background-color: #00ff88;
       border: none;
-      border-radius: 30px;
-      background: #00ffcc;
-      color: black;
+      border-radius: 5px;
       font-weight: bold;
-      cursor: pointer;
-      width: 100%;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background: #00ccaa;
     }
   </style>
 </head>
 <body>
-
-  <h1>Desi SMP Player Registration</h1>
-
-  <form action="https://formsubmit.co/akproboyt@gmail.com" method="POST">
-    <!-- Optional: turn off captcha -->
-    <input type="hidden" name="_captcha" value="false">
-
-    <!-- Optional: after submit redirect to a custom page -->
-    <input type="hidden" name="_next" value="https://thankyou.akpro.com/">
-
-    <label for="mcid">Minecraft Username:</label>
-    <input type="text" id="mcid" name="Minecraft ID" required>
-
-    <label for="tier">PvP Tier:</label>
-    <select id="tier" name="PvP Tier" required>
-      <option value="Noob">Noob</option>
-      <option value="Average">Average</option>
-      <option value="Pro">Pro</option>
-      <option value="God">God</option>
-    </select>
-
-    <label for="age">Your Age:</label>
-    <input type="number" id="age" name="Age" min="6" max="100" required>
-
-    <label for="platform">Platform:</label>
-    <select id="platform" name="Platform" required>
-      <option value="Java">Java</option>
-      <option value="Bedrock">Bedrock</option>
-    </select>
-
-    <label for="discord">Discord ID:</label>
-    <input type="text" id="discord" name="Discord ID" placeholder="e.g. AKPRO_boy#1234" required>
-
-    <button type="submit">🚀 Submit</button>
+  <h1>🛡️ Desi SMP Registration 🛡️</h1>
+  <form action="mailto:akproboyt@gmail.com" method="POST" enctype="text/plain">
+    <input type="text" name="Minecraft Username" placeholder="Enter your Minecraft username" required><br>
+    <select name="PvP Tier" required>
+      <option value="" disabled selected>Select PvP Tier</option>
+      <option>Noob</option>
+      <option>Average</option>
+      <option>Pro</option>
+      <option>Hacker</option>
+    </select><br>
+    <select name="Platform" required>
+      <option value="" disabled selected>Select Platform</option>
+      <option>Java</option>
+      <option>Bedrock</option>
+    </select><br>
+    <input type="number" name="Age" placeholder="Your Age" required><br>
+    <input type="email" name="Email" placeholder="Your Email" required><br>
+    <input type="text" name="Discord ID" placeholder="Your Discord Tag (e.g. AKPRO#1234)" required><br>
+    <input type="text" name="Aternos Username" placeholder="Your Aternos ID" required><br>
+    <button type="submit">Register for Desi SMP</button>
   </form>
-
 </body>
 </html>
